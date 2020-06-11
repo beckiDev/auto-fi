@@ -1,0 +1,11 @@
+.SmallPostConteiner{
+   background-color: lightGray;
+   padding: 22px 30px;
+   display: flex;
+   text-decoration: none;
+   text-align: left;
+   margin-bottom: 35px;
+   cursor: pointer;
+   margin-top: 20px;
+   flex-flow: column;
+}
