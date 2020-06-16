@@ -6,23 +6,33 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^10.2.1",
     "@testing-library/user-event": "^7.1.2",
+    "connected-react-router": "^6.8.0",
     "enzyme": "^3.11.0",
     "font-awesome": "^4.7.0",
+    "history": "^4.10.1",
     "jest-fetch-mock": "^3.0.3",
     "node-fetch": "^2.6.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-google-font-loader": "^1.1.0",
     "react-redux": "^7.2.0",
+    "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
+    "react-router-redux": "^4.0.8",
     "react-scripts": "3.4.1",
     "react-test-renderer": "^16.13.1",
     "redux": "^4.0.5",
     "redux-logger": "^3.0.6",
     "redux-mock-store": "^1.5.4",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "websocket-extensions": "^0.1.4",
+    "yargs-parser": "^5.0.0-security.0"
   },
   "scripts": {
+    "install_dependencies": "npm i -g json-server && npm i",
+    "start_db": "json-server --watch db.json --port 3004",
     "start": "react-scripts start",
+    "start_all": "(npm run start_db) && (npm run start)",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -41,5 +51,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "enzyme-adapter-react-16": "^1.15.2"
   }
 }

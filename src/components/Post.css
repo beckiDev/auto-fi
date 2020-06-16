@@ -5,7 +5,25 @@
    text-decoration: none;
    text-align: left;
    margin-bottom: 35px;
-   cursor: pointer;
    margin-top: 20px;
    flex-flow: column;
+}
+
+.SmallPostConteiner:hover{
+   background-color: #8292eb;
+}
+
+.CommentsPostConteiner{
+   background-color: lightGray;
+   padding: 22px 30px;
+   cursor: pointer;
+}
+
+.add-comments {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   padding: 10px;
+   justify-content: space-around;
+   cursor: pointer;
 }

@@ -1,21 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from "react-redux";
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import './index.css';
+import { Route, Switch } from 'react-router'
+import { ConnectedRouter } from 'connected-react-router'
 import App from './App';
-import PostFull from './components/PostFull.js'
-import store from './store'
-
+import store, { history } from './store'
+import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <Router>
-        <Route path="/" component={App}/>
-        <Route path="/post/id" component={PostFull}/>
-      </Router>
-     
+    <ConnectedRouter history={history}> 
+      <Switch history={history}>
+        <Route exact path="/" render={() => <App />}/>
+      </Switch>   
+      </ConnectedRouter>
     </Provider>
     
   </React.StrictMode>,
